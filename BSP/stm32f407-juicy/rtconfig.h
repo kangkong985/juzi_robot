@@ -114,6 +114,19 @@
 
 /* Utilities */
 
+#define RT_USING_ULOG
+#define ULOG_OUTPUT_LVL_D
+#define ULOG_OUTPUT_LVL 7
+#define ULOG_ASSERT_ENABLE
+#define ULOG_LINE_BUF_SIZE 128
+
+/* log format */
+
+#define ULOG_USING_COLOR
+#define ULOG_OUTPUT_TIME
+#define ULOG_OUTPUT_LEVEL
+#define ULOG_OUTPUT_TAG
+#define ULOG_BACKEND_USING_CONSOLE
 
 /* RT-Thread online packages */
 
@@ -145,6 +158,9 @@
 
 /* system packages */
 
+#define PKG_USING_ROBOTS
+#define PKG_USING_ROBOTS_LATEST_VERSION
+#define PKG_ROBOT_VER_NUM 0x99999
 
 /* peripheral libraries and drivers */
 
