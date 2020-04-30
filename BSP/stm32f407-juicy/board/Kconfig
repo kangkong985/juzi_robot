@@ -56,6 +56,11 @@ menu "On-chip Peripheral Drivers"
             endif
         endif
     
+	config BSP_USING_SPI1
+		bool "Enable SPI1 BUS"
+		select RT_USING_SPI
+		default n
+		
 endmenu
 
 menu "Board extended module Drivers"
